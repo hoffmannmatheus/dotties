@@ -101,3 +101,12 @@ endfunction
 autocmd FileType c,cpp,css,java,javascript,perl,php
     \ nmap <silent> <Leader>; :call <SID>appendSemiColon()<cr>
 
+" Start NERD Tree and select code window
+autocmd vimenter * NERDTree
+autocmd VimEnter * wincmd p
+" Auto close NERD Tree if the last code window is closed
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" Remap to next/previous buffers ctrl-n/p
+nnoremap <silent> <C-n> :bn<CR>
+nnoremap <silent> <C-p> :bp<CR>
+

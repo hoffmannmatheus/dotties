@@ -81,22 +81,12 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# more 
+# some more ls aliases
 alias ls='ls --color=auto'
 alias ll='git status'
 alias l='ls -alhF'
 alias la='ls -A'
-alias v='vim -p *.*'
-alias zapper='cd /home/likewise-open/CERTI/mhi/projects/smart_platform/dev/apps/zapper/src'
-alias libs='cd /home/likewise-open/CERTI/mhi/projects/smart_platform/dev/libs/zapper_api'
-alias tests='cd /home/likewise-open/CERTI/mhi/projects/smart_platform/dev/tests/lua/src'
-alias emulator='cd /remotefs/certi_smarttv_emulator/fs/sandbox'
-alias vzla='cd /remotefs/certi_vzla_7105/stb7102vzla_bsp/sandbox'
-alias sandbox='cd /remotefs/certi_stb/fs/sandbox'
-alias gesture='cd /home/likewise-open/CERTI/mhi/projects/gesture/dev'
-#alias android='cd /home/likewise-open/CERTI/mhi/projects/certi_android_apps/dev/apps'
-alias eclipse='/home/likewise-open/CERTI/mhi/software/adt-bundle-linux-x86_64-20130917/eclipse/eclipse'
-alias transformer='ssh -X -p2245 CERTI\\mhi@177.71.112.101'
+alias v='vim *.*'
 
 bind "set completion-ignore-case on"
 
