@@ -17,6 +17,10 @@ mv .vim.tgz $source/dots/
 echo ' packing bashrc...'
 cp .bashrc $source/dots/
 
+# bash
+echo ' packing gitconfig...'
+cp .gitconfig $source/dots/
+
 popd > /dev/null
 
 echo 'done.'

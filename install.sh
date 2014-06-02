@@ -12,8 +12,9 @@ echo ' copying dotties...'
 pushd . > /dev/null
 cd dots
 
-cp .bashrc ~/.bashrc
-cp .vimrc ~/.vimrc
+cp .gitconfig ~/
+cp .bashrc ~/
+cp .vimrc ~/
 
 tar -zxvf .vim.tgz
 mv .vim ~/
