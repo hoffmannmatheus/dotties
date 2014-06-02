@@ -1,0 +1,7 @@
+[user]
+	name = Matheus Hoffmann Silva
+	email = mhi@certi.org.br
+[color "status"]
+	branch = red
+[color]
+	showbranch = auto
