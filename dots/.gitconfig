@@ -2,6 +2,7 @@
 	name = Matheus Hoffmann Silva
 	email = hoffmann.matheus@gmail.com
 [color "status"]
-	branch = red
+    branch = red
 [color]
-	showbranch = auto
+    ui=always
+    showbranch = auto

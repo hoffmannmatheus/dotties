@@ -6,6 +6,7 @@ echo 'Installing Theos dotties...'
 # aptitudes
 sudo apt-get -qy install vim
 sudo apt-get -qy install konsole
+sudo apt-get -qy install tig
 
 # dotties
 echo ' copying dotties...'

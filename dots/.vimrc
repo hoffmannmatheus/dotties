@@ -1,10 +1,4 @@
 
-"set number
-"set wildmenu
-"set tabpagemax=20
-
-
-
 set hidden                                                " don't unload buffer when switching away
 set modeline                                              " allow per-file settings via modeline
 set exrc                                                  " enable per-directory .vimrc files
@@ -69,7 +63,7 @@ else
 endif
 
 
-"set tabstop=2 shiftwidth=2 expandtab
+set tabstop=4 shiftwidth=4 expandtab
 autocmd FileType lua :setlocal sw=4 ts=4
 autocmd FileType cpp :setlocal sw=2 ts=2 sts=2 shiftwidth=2 expandtab
 autocmd filetype h :setlocal sw=2 ts=2 sts=2 shiftwidth=2 expandtab
