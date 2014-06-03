@@ -18,6 +18,7 @@ cp .bashrc ~/
 cp .vimrc ~/
 
 tar -zxvf .vim.tgz
+rm -rf ~/.vim
 mv .vim ~/
 rm -rf .vim
 
@@ -27,5 +28,6 @@ mv kde/* ~/kde/share/apps/konsole/
 rm -rf kde
 
 popd > /dev/null
+source ~/.bashrc
 
 echo 'Done!'
