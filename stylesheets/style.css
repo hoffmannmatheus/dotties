@@ -1,0 +1,539 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+a {
+  color: #00e;
+}
+a:visited {
+  color: #551a8b;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 75%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  *margin-left: -7px;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+table button,
+table input {
+  *overflow: auto;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+h1,
+h2 {
+  margin: 0;
+}
+h1 {
+  text-shadow: 1px 2px 2px #ddd;
+  color: #ccc;
+}
+div#center {
+  background: url("../images/shadow.png") right top;
+  margin: 0 auto;
+  width: 988px;
+}
+div#container {
+  width: 970px;
+  margin-left: 9px;
+}
+div#header {
+  height: 120px;
+  background-color: #eee;
+  padding-top: 25px;
+  border-bottom: 1px solid #f4f4f4;
+}
+div#header h1 {
+  text-align: center;
+  font-size: 60px;
+}
+div#content {
+  background-color: #fff;
+  text-align: left;
+  min-height: 650px;
+}
+div#content div.categories {
+  background-color: #ddd;
+  width: 100%;
+  height: 45px;
+}
+div#content div.categories h1 {
+  color: #fff;
+  text-shadow: 0px 0px 0px;
+  font-size: 20px;
+  padding-top: 13px;
+  padding-left: 20px;
+}
+div#content div.product {
+  height: 100%;
+  padding: 20px;
+}
+div#content div.product h1 {
+  font-size: 34px;
+  text-align: right;
+}
+div#content div.product div.description h1 {
+  text-align: center;
+  padding-top: 80px;
+}
+div#content div.verticalfill {
+  height: 140px;
+}
+div#content div.relatedproducts  div#content div.relatedproducts div#showcase {
+    width: 930px;
+    height: 320px;
+    background-color: #fff;
+  }
+  div#content div.relatedproducts div#showcase div.header {
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+  }
+  div#content div.relatedproducts div#showcase div.header h2 {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  div#content div.relatedproducts div#showcase div.header div.seen {
+    width: 180px;
+    float: left;
+    color: #333;
+    border-bottom: 2px solid #999;
+    padding-bottom: 4px;
+  }
+  div#content div.relatedproducts div#showcase div.header div.recommend {
+    width: 740px;
+    margin-left: 180px;
+    color: #9f0102;
+    border-bottom: 2px solid #9f0102;
+    padding-bottom: 4px;
+  }
+  div#content div.relatedproducts div#showcase div#reference {
+    width: 190px;
+    height: 260px;
+    float: left;
+  }
+  div#content div.relatedproducts div#showcase a#arrow-left {
+    float: left;
+    height: 260px;
+    width: 15px;
+    display: block;
+  }
+  div#content div.relatedproducts div#showcase a#arrow-left:hover {
+    background-color: #ddd;
+  }
+  div#content div.relatedproducts div#showcase a#arrow-left img {
+    margin-top: 120px;
+    width: 10px;
+    height: 20px;
+  }
+  div#content div.relatedproducts div#showcase div#recommendations {
+    width: 700px;
+    height: 262px;
+    float: left;
+    overflow: hidden;
+  }
+  div#content div.relatedproducts div#showcase div#recommendations ul {
+    margin: 0 0 0 -37px;
+    position: relative;
+    -webkit-transition: 0.5s left;
+    -moz-transition: 0.5s left;
+    -ms-transition: 0.5s left;
+    -o-transition: 0.5s left;
+  }
+  div#content div.relatedproducts div#showcase div#recommendations ul li {
+    width: 175px;
+    display: block;
+    float: left;
+    position: relative;
+  }
+  div#content div.relatedproducts div#showcase a#arrow-right {
+    float: left;
+    height: 260px;
+    width: 15px;
+    display: block;
+  }
+  div#content div.relatedproducts div#showcase a#arrow-right:hover {
+    background-color: #ddd;
+  }
+  div#content div.relatedproducts div#showcase a#arrow-right img {
+    margin-top: 120px;
+    width: 10px;
+    height: 20px;
+    align: right;
+  }
+  div#content div.relatedproducts a.showcase-item {
+    width: 170px;
+    height: 260px;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #fff;
+  }
+  div#content div.relatedproducts a.showcase-item:hover {
+    background-color: #ddd;
+    border: 1px solid #bbb;
+  }
+  div#content div.relatedproducts a.showcase-item span.item-photo img {
+    max-width: 130px;
+    max-height: 130px;
+    margin: 5px 20px 5px 20px;
+  }
+  div#content div.relatedproducts a.showcase-item span.item-description {
+    width: 150px;
+    height: 130px;
+    display: block;
+    margin: 0px 10px 0px 10px;
+    font-weight: normal;
+  }
+  div#content div.relatedproducts a.showcase-item span.item-description span.name {
+    font-size: 11px;
+    line-height: 15px;
+    max-height: 45px;
+    border-bottom: none;
+    margin-bottom: 5px;
+    color: #333;
+    display: block;
+  }
+  div#content div.relatedproducts a.showcase-item span.item-description span.old-price {
+    color: #333;
+    font-size: 13px;
+    display: block;
+  }
+  div#content div.relatedproducts a.showcase-item span.item-description span.price {
+    color: #d30a14;
+    font-size: 13px;
+    margin: 5px 0px 2px 0px;
+    display: block;
+  }
+  div#content div.relatedproducts a.showcase-item span.item-description span.price span.price-value {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  div#content div.relatedproducts a.showcase-item span.item-description span.payment {
+    color: #d30a14;
+    font-size: 11px;
+    font-weight: normal;
+    display: block;
+  }
+ {
+
+  width: 100%;
+}
+div#content div.relatedproducts div#showcase {
+  width: 930px;
+  height: 320px;
+  background-color: #fff;
+}
+div#content div.relatedproducts div#showcase div.header {
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+}
+div#content div.relatedproducts div#showcase div.header h2 {
+  font-size: 18px;
+  margin-left: 5px;
+}
+div#content div.relatedproducts div#showcase div.header div.seen {
+  width: 180px;
+  float: left;
+  color: #333;
+  border-bottom: 2px solid #999;
+  padding-bottom: 4px;
+}
+div#content div.relatedproducts div#showcase div.header div.recommend {
+  width: 740px;
+  margin-left: 180px;
+  color: #9f0102;
+  border-bottom: 2px solid #9f0102;
+  padding-bottom: 4px;
+}
+div#content div.relatedproducts div#showcase div#reference {
+  width: 190px;
+  height: 260px;
+  float: left;
+}
+div#content div.relatedproducts div#showcase a#arrow-left {
+  float: left;
+  height: 260px;
+  width: 15px;
+  display: block;
+}
+div#content div.relatedproducts div#showcase a#arrow-left:hover {
+  background-color: #ddd;
+}
+div#content div.relatedproducts div#showcase a#arrow-left img {
+  margin-top: 120px;
+  width: 10px;
+  height: 20px;
+}
+div#content div.relatedproducts div#showcase div#recommendations {
+  width: 700px;
+  height: 262px;
+  float: left;
+  overflow: hidden;
+}
+div#content div.relatedproducts div#showcase div#recommendations ul {
+  margin: 0 0 0 -37px;
+  position: relative;
+  -webkit-transition: 0.5s left;
+  -moz-transition: 0.5s left;
+  -ms-transition: 0.5s left;
+  -o-transition: 0.5s left;
+}
+div#content div.relatedproducts div#showcase div#recommendations ul li {
+  width: 175px;
+  display: block;
+  float: left;
+  position: relative;
+}
+div#content div.relatedproducts div#showcase a#arrow-right {
+  float: left;
+  height: 260px;
+  width: 15px;
+  display: block;
+}
+div#content div.relatedproducts div#showcase a#arrow-right:hover {
+  background-color: #ddd;
+}
+div#content div.relatedproducts div#showcase a#arrow-right img {
+  margin-top: 120px;
+  width: 10px;
+  height: 20px;
+  align: right;
+}
+div#content div.relatedproducts a.showcase-item {
+  width: 170px;
+  height: 260px;
+  display: block;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+div#content div.relatedproducts a.showcase-item:hover {
+  background-color: #ddd;
+  border: 1px solid #bbb;
+}
+div#content div.relatedproducts a.showcase-item span.item-photo img {
+  max-width: 130px;
+  max-height: 130px;
+  margin: 5px 20px 5px 20px;
+}
+div#content div.relatedproducts a.showcase-item span.item-description {
+  width: 150px;
+  height: 130px;
+  display: block;
+  margin: 0px 10px 0px 10px;
+  font-weight: normal;
+}
+div#content div.relatedproducts a.showcase-item span.item-description span.name {
+  font-size: 11px;
+  line-height: 15px;
+  max-height: 45px;
+  border-bottom: none;
+  margin-bottom: 5px;
+  color: #333;
+  display: block;
+}
+div#content div.relatedproducts a.showcase-item span.item-description span.old-price {
+  color: #333;
+  font-size: 13px;
+  display: block;
+}
+div#content div.relatedproducts a.showcase-item span.item-description span.price {
+  color: #d30a14;
+  font-size: 13px;
+  margin: 5px 0px 2px 0px;
+  display: block;
+}
+div#content div.relatedproducts a.showcase-item span.item-description span.price span.price-value {
+  font-size: 18px;
+  font-weight: bold;
+}
+div#content div.relatedproducts a.showcase-item span.item-description span.payment {
+  color: #d30a14;
+  font-size: 11px;
+  font-weight: normal;
+  display: block;
+}
+div#footer {
+  padding-top: 50px;
+  height: 100px;
+  background-color: #e4e4e4;
+  border-top: 1px solid #f4f4f4;
+}
+div#footer h1 {
+  text-align: center;
+  font-size: 34px;
+}
+
