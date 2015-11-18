@@ -30,8 +30,8 @@ var MYCONFIG =
         "nb_sides": 5
       },
       "image": {
-        "src": "assets/poop.png",
-        "width": 40,
+        "src": "assets/poop2.png",
+        "width": 62,
         "height": 40
       }
     },
@@ -46,7 +46,7 @@ var MYCONFIG =
       }
     },
     "size": {
-      "value": 10,
+      "value": 25,
       "random": true,
       "anim": {
         "enable": false,
