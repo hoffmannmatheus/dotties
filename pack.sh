@@ -1,6 +1,6 @@
 #/bin/bash
 
-# pack dots
+# Run this from the Dots repository root.
 echo 'packing dotties...'
 
 source=$(pwd)
@@ -25,4 +25,3 @@ popd > /dev/null
 
 echo 'done.'
 git status
-

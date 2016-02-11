@@ -62,12 +62,11 @@ else
     autocmd BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
-
 set tabstop=4 shiftwidth=4 expandtab
 autocmd FileType lua :setlocal sw=4 ts=4
 autocmd FileType cpp :setlocal sw=2 ts=2 sts=2 shiftwidth=2 expandtab
-autocmd filetype h :setlocal sw=2 ts=2 sts=2 shiftwidth=2 expandtab
-autocmd filetype dat :setlocal sw=8 ts=12
+autocmd FileType h :setlocal sw=2 ts=2 sts=2 shiftwidth=2 expandtab
+autocmd FileType dat :setlocal sw=8 ts=12
 
 filetype plugin on
 
@@ -81,6 +80,16 @@ else " no gui
   " I have no idea of the name of Ctrl-Space elsewhere
   endif
 endif
+
+" Auto Spell for text files
+autocmd BufNewFile,BufRead *.tex set spell
+autocmd BufNewFile,BufRead *.txt set spell
+autocmd BufNewFile,BufRead *.md set spell
+" Set spellfile to location that is guaranteed to exist, can be symlinked to
+set spellfile=$HOME/.vim-spell-en.utf-8.add
+
+" Autocomplete with dictionary words when spell check is on
+set complete+=kspell
 
 " call pathogen#infect()
 
