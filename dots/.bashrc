@@ -1,9 +1,44 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
 
-# If not running interactively, don't do anything
-[ -z "$PS1" ] && return
+##################### My Configs ###############################################
+
+alias ls='ls --color=auto'
+alias l='ls -alhF --group-directories-first'
+alias la='ls -A'
+alias v='vim *.*'
+alias studio='~/software/android-studio/bin/studio.sh'
+
+export PATH=$PATH:~/software/Android/Sdk/platform-tools
+export PATH=$PATH:/sbin
+
+function g { # grep
+grep -ri $1
+}
+
+function f { # find
+find . -name $1
+}
+
+function v { # vim
+vim *.*
+}
+
+function ll { # git status
+git status
+}
+
+function makepdf { # LaTeX  tex -> pdf
+pdflatex -shell-escape $1.tex && evince $1.pdf
+}
+
+function cleartex { # Clear LaTeX auto generated files
+rm *.aux *.log *.out *.pdf *.pyg *.toc
+}
+
+# Custom PS1 (user@host folder$)
+export PS1="\[$(tput setaf 7)\]\u\[$(tput setaf 7)\]@\[$(tput setaf 5)\]\h \[$(tput setaf 4)\]\W\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+
+
+################ Default Ubuntu Configs ########################################
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -13,16 +48,12 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=2000
+HISTFILESIZE=4000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
-
-# If set, the pattern "**" used in a pathname expansion context will
-# match all files and zero or more directories and subdirectories.
-#shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -44,53 +75,23 @@ esac
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
 	color_prompt=yes
     else
 	color_prompt=
     fi
 fi
 
-export PS1="\[$(tput setaf 7)\]\u\[$(tput setaf 7)\]@\[$(tput setaf 5)\]\h \[$(tput setaf 4)\]\W\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ls='ls --color=auto'
-alias ll='git status'
-alias l='ls -alhF --group-directories-first'
-alias la='ls -A'
-alias v='vim *.*'
-
-bind "set completion-ignore-case on"
-
-export PATH=${PATH}:/home/likewise-open/CERTI/mhi/software/adt-bundle-linux-x86_64-20130917/sdk/platform-tools
-export PATH=${PATH}:/home/likewise-open/CERTI/mhi/software/adt-bundle-linux-x86_64-20130917/sdk/tools
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -98,7 +99,3 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
-export PATH=$PATH:/sbin
-
-

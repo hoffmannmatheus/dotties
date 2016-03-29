@@ -1,12 +1,9 @@
 #/bin/bash
 
-# installs Theos vim/konsole + dotties!
-echo 'Installing Theos dotties...'
+echo 'Installing dotties...'
 
-# aptitudes
-sudo apt-get -qy install vim
-sudo apt-get -qy install konsole
-sudo apt-get -qy install tig
+# basic aptitudes
+sudo apt-get -qy install vim tig git gource lua5.2 
 
 # dotties
 echo ' copying dotties...'
@@ -21,11 +18,6 @@ tar -zxvf .vim.tgz
 rm -rf ~/.vim
 mv .vim ~/
 rm -rf .vim
-
-tar -zxvf kde.tgz
-mkdir -p ~/kde/share/apps/konsole
-mv kde/* ~/kde/share/apps/konsole/
-rm -rf kde
 
 popd > /dev/null
 source ~/.bashrc
