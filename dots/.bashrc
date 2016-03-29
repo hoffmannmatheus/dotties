@@ -70,7 +70,7 @@ fi
 # some more ls aliases
 alias ls='ls --color=auto'
 alias ll='git status'
-alias l='ls -alhF'
+alias l='ls -alhF --group-directories-first'
 alias la='ls -A'
 alias v='vim *.*'
 
