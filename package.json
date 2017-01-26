@@ -1,0 +1,25 @@
+{
+  "name": "matsilva.io",
+  "version": "0.0.1",
+  "description": "wwww",
+  "main": "server.js",
+  "scripts": {
+    "server": "./scripts/run.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoffmannmatheus/dotties.git"
+  },
+  "keywords": [
+    "matsilva.io"
+  ],
+  "author": "Mat Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoffmannmatheus/dotties/issues"
+  },
+  "homepage": "https://github.com/hoffmannmatheus/dotties#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}
